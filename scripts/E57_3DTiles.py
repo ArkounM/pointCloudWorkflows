@@ -130,8 +130,8 @@ for file in os.listdir(lazDirectory):
 print("All files turned into 3D tiles successfully")
 
 '''Pipeline 3: GZIP the 3D tiles to reduce file size'''
-# Set input and output directories
-gzipDirectory = r"T:/HOK_Streamable-Assets/02_GENERATE/10_MODELS/POINTCLOUD/3Dtiles_GZIP"
+# Set input and output directories. GZIP directory will need to be set by user 
+gzipDirectory = r"/gzipDirectory"
 
 # Ensure the output directory exists
 if not os.path.exists(gzipDirectory):
