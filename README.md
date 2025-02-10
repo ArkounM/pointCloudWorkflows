@@ -18,21 +18,26 @@ py3dtiles (https://py3dtiles.org/v8.0.2/cli.html#convert)
 Below is the step by step breakdown to download the required packages in a Conda environment:
 
 Create a new Conda environment, open terminal and install PDAL:
+
     conda install -c conda-forge pdal=2.8.0
 
 Next install py3dtiles + laz reading packages
+
     pip install py3dtiles
     pip install py3dtiles[las]
     pip install laspy[laszip]
 
 To install 3d-tiles-tools. You will need nodejs in this env to do so
+
     conda install -c conda-forge nodejs
 
 If nodejs gives errors try the following
+
     conda install conda-forge/label/cf201901::nodejs
     conda update nodejs
 
 Finally install 3d-tiles-tools
+
     npm install 3d-tiles-tools
 
 You shouldnow have all the packages. In the shell, navigate to the directory where you have cloned this repo and run the script:
