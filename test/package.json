@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "3d-tiles-tools": "^0.5.0",
+    "gltf-pipeline": "^4.1.0"
+  }
+}

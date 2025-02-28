@@ -1,7 +1,7 @@
 {
     "pipeline": [
         {
-            "type": "readers.e57",
+            "type": "readers.las",
             "filename": "%%input_file%%"
         },
         {
@@ -16,7 +16,7 @@
         {
             "type": "writers.las",
             "filename": "%%output_file%%",
-			"offset_x": "auto",
+            "offset_x": "auto",
             "offset_y": "auto",
             "offset_z": "auto",
             "scale_x": 0.001,

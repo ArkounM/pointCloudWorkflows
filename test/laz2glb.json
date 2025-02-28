@@ -1,0 +1,18 @@
+{
+    "pipeline": [
+        {
+            "type": "readers.las",
+            "filename": "E:/_PointCloud/Workflow_2/LAZ/P28_01_Int_Lvl6__629C__20190308_A.laz"
+        },
+        {
+            "type": "filters.poisson",
+            "depth": 12
+        },
+        {
+            "type":"writers.gltf",
+            "filename":"E:/_PointCloud/Workflow_2/GLB/P28_01_Int_Lvl6__629C__20190308_A.glb",
+            "red": 0.8,
+            "metallic": 0.5
+        }
+    ]
+}
