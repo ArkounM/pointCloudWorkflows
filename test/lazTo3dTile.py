@@ -5,8 +5,8 @@ import json
 from osgeo import osr
 
 # Specify directories
-lazDirectory = r"E:/_PointCloud/Workflow_2/LAZ/"
-tileDirectory = r"E:/_PointCloud/Workflow_5/TILE/"
+lazDirectory = r"E:/_PointCloud/Workflow_9/LAZ/"
+tileDirectory = r"E:/_PointCloud/Workflow_10/TILE/"
 
 # Create output tile directory if it does not exist
 if not os.path.exists(tileDirectory):
@@ -94,7 +94,7 @@ print("All files turned into 3D tiles successfully")
 
 '''Pipeline 3: GZIP the 3D tiles to reduce file size'''
 # Set input and output directories. GZIP directory will need to be set by user 
-gzipDirectory = r"E:/_PointCloud/Workflow_5/gzipDirectory"
+gzipDirectory = r"E:/_PointCloud/Workflow_10/gzipDirectory"
 
 # Ensure the output directory exists
 if not os.path.exists(gzipDirectory):
